@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>14 Agustus 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ditio.css">
+</head>
+<body>
+
+<div id="petals"></div>
+<div id="shower"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="eyebrow">Hari Tanggal Jadian Kita</div>
+  <div class="stamp">
+    <div class="day">14</div>
+    <div class="month">Agustus 2026</div>
+  </div>
+  <h1 class="title">Hari yang dimana <span>Tio dan Tiara</span> memilih untuk berjalan bersama</h1>
+  <p class="subtitle">Kamu suka ga beb wkakwakw</p>
+  <div class="scroll-hint">geser ke bawah kalo cinta wkwk</div>
+</section>
+
+<!-- COUNTER -->
+<section class="counter-wrap">
+  <div class="counter-label">Sudah berjalan</div>
+  <div class="counter-num" id="dayCount">0</div>
+  <div class="counter-sub">hari, sejak 14 Agustus 2026</div>
+</section>
+
+<!-- LETTER -->
+<section class="letter-wrap">
+  <div class="letter">
+    <p>Kepada Fani Tiara Dhiba</p>
+    <p>Aku masih agak nggak nyangka akhirnya kita bisa sampai di titik ini. Setelah semua yang kita lewatin, semua cerita, bercanda, ngobrol, sampai momen-momen yang mungkin nggak selalu mudah, akhirnya sekarang kita benar-benar jadi kita.</p>
+    <p>Jujur aku seneng banget bisa punya kamu sebagai seseorang yang sekarang bisa aku panggil pacar. Aku nggak berharap hubungan kita harus selalu sempurna, karena pasti nanti ada saatnya kita beda pendapat, salah paham, atau mungkin sama-sama capek. Tapi aku berharap setiap ada masalah, kita bisa tetap memilih buat saling ngobrol, saling ngerti, dan nggak gampang menyerah satu sama lain.</p>
+    <p>Aku juga nggak mau cuma seneng di awal-awal aja. Aku pengen tetap bisa bikin kamu nyaman, bikin kamu ngerasa dihargai, dan jadi seseorang yang bisa kamu percaya. Kalau nanti ada kekuranganku, bilang aja. Aku mungkin nggak selalu langsung bisa jadi yang terbaik, tapi aku bakal berusaha belajar dan memperbaiki diri.</p>
+    <p>Terima kasih karena akhirnya mau jalan bareng sama aku. Semoga hubungan ini bisa jadi sesuatu yang baik buat kita berdua, bukan cuma karena kita saling suka, tapi karena kita juga bisa saling jaga dan tumbuh bareng.</p>
+    <p class="signoff">— Ditio untuk tiara</p>
+  </div>
+</section>
+
+<!-- TIMELINE (edit sesuai cerita kalian) -->
+<section class="timeline-wrap">
+  <div class="timeline-title">Sepenggal Cerita Kita</div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-date">Awal</div>
+      <div class="tl-line"><div class="tl-dot"></div><div class="tl-bar"></div></div>
+      <div class="tl-text"><b>Pertama kenal</b><br>kita awal kenal di leo ya wkwkw, dan setelah lama aku nungguin kamu selama 1 bulan lebih aku dapat wa kamu jujur itu rasanya seneng banget</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">PDKT</div>
+      <div class="tl-line"><div class="tl-dot"></div><div class="tl-bar"></div></div>
+      <div class="tl-text"><b>First Time</b><br>pertama kali kita bertemu kita bukber di gacoan jujur itu aku bingung mau bukber dimana wkwkw, dan setelah itu kita udah sering ketemu jangan sampe bosen sama aku ya kalo ketemu hehe</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Jadian</div>
+      <div class="tl-line"><div class="tl-dot" style="background:var(--gold);width:12px;height:12px;"></div></div>
+      <div class="tl-text"><b>14 Agustus 2026</b><br>jujur saat aku nembak kamu, aku agak nervous dan grogi wkwk cuma aku beraniin sebagai cowo dan kamu ngomong YES I WANT, disitu aku seneng dan kaget wkwk. Love u beb</div>
+    </div>
+  </div>
+</section>
+
+<!-- BUNGA MEKAR (interaktif, tap/klik) -->
+<section class="bloom-wrap">
+  <div class="counter-label">Sentuh bunganya</div>
+  <div class="bloom-stage" id="bloomStage">
+    <svg id="flowerSvg" viewBox="0 0 300 300" width="280" height="280">
+      <defs>
+        <path id="heartShape" d="M0,15 C-16,2 -24,-9 -14,-18 C-6,-25 0,-18 0,-11 C0,-18 6,-25 14,-18 C24,-9 16,2 0,15 Z"/>
+      </defs>
+      <g id="petals-group" transform="translate(150,150)">
+        <g class="prot" transform="rotate(0)"><use href="#heartShape" class="fpetal p0" fill="#d9a3ab" transform="translate(0,-42) scale(1.9)"/></g>
+        <g class="prot" transform="rotate(60)"><use href="#heartShape" class="fpetal p1" fill="#e3b6bd" transform="translate(0,-42) scale(1.9)"/></g>
+        <g class="prot" transform="rotate(120)"><use href="#heartShape" class="fpetal p2" fill="#d9a3ab" transform="translate(0,-42) scale(1.9)"/></g>
+        <g class="prot" transform="rotate(180)"><use href="#heartShape" class="fpetal p3" fill="#e3b6bd" transform="translate(0,-42) scale(1.9)"/></g>
+        <g class="prot" transform="rotate(240)"><use href="#heartShape" class="fpetal p4" fill="#d9a3ab" transform="translate(0,-42) scale(1.9)"/></g>
+        <g class="prot" transform="rotate(300)"><use href="#heartShape" class="fpetal p5" fill="#e3b6bd" transform="translate(0,-42) scale(1.9)"/></g>
+        <use href="#heartShape" fill="#c9a24a" transform="scale(1.1)"/>
+      </g>
+    </svg>
+  </div>
+  <div class="bloom-msg" id="bloomMsg">tap bunganya untuk mekar 🌸</div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing">
+  <h2>Terima kasih sudah memilih hari ini,<br>dan terus memilihnya setiap hari.</h2>
+  <div class="names">Tio &amp; Tiara</div>
+</section>
+
+<footer>dibuat dengan sepenuh hati dari ditio septian robbiansyah untuk fani tiara dhiba</footer>
+
+<script src="tiara.js"></script>
+</body>
+</html>
